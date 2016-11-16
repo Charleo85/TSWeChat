@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		521AD1D46345C1A90F878475 /* Pods_TSWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0917A01A536A5EE41BF160D /* Pods_TSWeChat.framework */; };
 		AE040A9F1C990B4A003A764D /* TSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE040A9E1C990B4A003A764D /* TSLocationManager.swift */; };
 		AE3CBC551C854B90008BA4AC /* TSChatDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CBC541C854B90008BA4AC /* TSChatDataManager.swift */; };
 		AE3CBC5A1C858C3F008BA4AC /* TSChatViewController+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CBC591C858C3F008BA4AC /* TSChatViewController+TestData.swift */; };
@@ -149,6 +148,7 @@
 		AEE69C181C81B92700C69224 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE69C171C81B92700C69224 /* UILabel+Extension.swift */; };
 		AEE69C1B1C81B97F00C69224 /* TSWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE69C1A1C81B97F00C69224 /* TSWebViewController.swift */; };
 		AEE69C1F1C81BF1F00C69224 /* TSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE69C1E1C81BF1F00C69224 /* TSConfig.swift */; };
+		FCE24244C651716D8F0A6FC9 /* Pods_TSWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF369A236F8AC360D6A6C2B /* Pods_TSWeChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,7 +162,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		879C4C7737B3D4DA6504869D /* Pods-TSWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSWeChat/Pods-TSWeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		07EB8BB3A1FB7251C4DCBB7A /* Pods-TSWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSWeChat/Pods-TSWeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		7B0919DEA8C1D9DC476F04AA /* Pods-TSWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSWeChat/Pods-TSWeChat.release.xcconfig"; sourceTree = "<group>"; };
 		AE040A9E1C990B4A003A764D /* TSLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSLocationManager.swift; sourceTree = "<group>"; };
 		AE3CBC541C854B90008BA4AC /* TSChatDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatDataManager.swift; sourceTree = "<group>"; };
 		AE3CBC591C858C3F008BA4AC /* TSChatViewController+TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSChatViewController+TestData.swift"; sourceTree = "<group>"; };
@@ -310,8 +311,7 @@
 		AEE69C171C81B92700C69224 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		AEE69C1A1C81B97F00C69224 /* TSWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSWebViewController.swift; sourceTree = "<group>"; };
 		AEE69C1E1C81BF1F00C69224 /* TSConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSConfig.swift; sourceTree = "<group>"; };
-		D7650798F0716EAD00AA686A /* Pods-TSWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSWeChat/Pods-TSWeChat.release.xcconfig"; sourceTree = "<group>"; };
-		F0917A01A536A5EE41BF160D /* Pods_TSWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF369A236F8AC360D6A6C2B /* Pods_TSWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,7 +319,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521AD1D46345C1A90F878475 /* Pods_TSWeChat.framework in Frameworks */,
+				FCE24244C651716D8F0A6FC9 /* Pods_TSWeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,11 +333,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18FCDE5FEB0C6C5536DF0CBA /* Pods */ = {
+		66BAD006C672F0FE3FA8710F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				879C4C7737B3D4DA6504869D /* Pods-TSWeChat.debug.xcconfig */,
-				D7650798F0716EAD00AA686A /* Pods-TSWeChat.release.xcconfig */,
+				BFF369A236F8AC360D6A6C2B /* Pods_TSWeChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8369FDFC7042318E6922A1BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07EB8BB3A1FB7251C4DCBB7A /* Pods-TSWeChat.debug.xcconfig */,
+				7B0919DEA8C1D9DC476F04AA /* Pods-TSWeChat.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -437,8 +445,8 @@
 				AE92B5E31C3FF73000968A3A /* TSWeChat */,
 				AE92B5F81C3FF73000968A3A /* TSWeChatTests */,
 				AE92B5E21C3FF73000968A3A /* Products */,
-				FB51EDC618380CF0CB9A05BC /* Frameworks */,
-				18FCDE5FEB0C6C5536DF0CBA /* Pods */,
+				8369FDFC7042318E6922A1BE /* Pods */,
+				66BAD006C672F0FE3FA8710F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -714,14 +722,6 @@
 			path = Web;
 			sourceTree = "<group>";
 		};
-		FB51EDC618380CF0CB9A05BC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F0917A01A536A5EE41BF160D /* Pods_TSWeChat.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -729,12 +729,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE92B5FE1C3FF73000968A3A /* Build configuration list for PBXNativeTarget "TSWeChat" */;
 			buildPhases = (
-				333F8A69197CBA2F78BBB29A /* Check Pods Manifest.lock */,
+				D85F33FB36C554A757684B9D /* [CP] Check Pods Manifest.lock */,
 				AE92B5DD1C3FF73000968A3A /* Sources */,
 				AE92B5DE1C3FF73000968A3A /* Frameworks */,
 				AE92B5DF1C3FF73000968A3A /* Resources */,
-				9680021210E15A4A2681EDFB /* Embed Pods Frameworks */,
-				751D460FDFD59FFE4D35526B /* Copy Pods Resources */,
+				2C02C27427BA69639D5C0B96 /* [CP] Embed Pods Frameworks */,
+				6C607EDD44D6B44BD2AB97A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -862,29 +862,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		333F8A69197CBA2F78BBB29A /* Check Pods Manifest.lock */ = {
+		2C02C27427BA69639D5C0B96 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSWeChat/Pods-TSWeChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		751D460FDFD59FFE4D35526B /* Copy Pods Resources */ = {
+		6C607EDD44D6B44BD2AB97A4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -892,19 +892,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSWeChat/Pods-TSWeChat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9680021210E15A4A2681EDFB /* Embed Pods Frameworks */ = {
+		D85F33FB36C554A757684B9D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSWeChat/Pods-TSWeChat-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1117,7 +1117,7 @@
 		};
 		AE92B5FF1C3FF73000968A3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 879C4C7737B3D4DA6504869D /* Pods-TSWeChat.debug.xcconfig */;
+			baseConfigurationReference = 07EB8BB3A1FB7251C4DCBB7A /* Pods-TSWeChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1138,7 +1138,7 @@
 		};
 		AE92B6001C3FF73000968A3A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7650798F0716EAD00AA686A /* Pods-TSWeChat.release.xcconfig */;
+			baseConfigurationReference = 7B0919DEA8C1D9DC476F04AA /* Pods-TSWeChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

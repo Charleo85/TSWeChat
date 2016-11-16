@@ -1,32 +1,29 @@
-<img src="./images/logo.png" alt="TSWeChat" title="TSWeChat"/>
-
-<a href="https://github.com/hilen/TSWeChat"><img src="https://img.shields.io/travis/rust-lang/rust.svg"></a>
 <a href="https://swift.org/"><img src="https://img.shields.io/badge/Swift-compatible-orange.svg"></a>
 <img src="https://img.shields.io/badge/platform-iOS%208.0%2B-ff69b4.svg">
 <a href="https://github.com/hilen/TSWeChat/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat"></a>
-<a href="http://twitter.com/hilenlai"><img src="https://img.shields.io/badge/twitter-@hilenlai-blue.svg?style=flat"></a>
+<a href="http://twitter.com/wjb665"><img src="https://img.shields.io/badge/twitter-@wjb665-blue.svg?style=flat"></a>
 
-TSWeChat - A [WeChat](https://itunes.apple.com/cn/app/wei/id414478124) alternative, written in Swift. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[中文说明](Chinese_README.md)
+WuChat - An alternative [WeChat](https://itunes.apple.com/cn/app/wei/id414478124) mobile client. Written in Swift 3Wu. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[中文说明](Chinese_README.md)
 
 ## Requirements
-- [Cocoapods](https://github.com/CocoaPods/CocoaPods) 0.39.0 +
+- [Cocoapods](https://github.com/CocoaPods/CocoaPods) 1.0.0 +
 - iOS 8.0+ / Mac OS X 10.9+
-- Xcode 7.3+
+- Xcode 8
 
 
 ## Features
 - Send your rich text, expression, image and voice.
-- The cell image in `TSChatImageCell` is drawn by using `Mask Layer` . The chat background can be changed freely so that UI will look perfect.
+- The cell image in `WuChatImageCell` is drawn by using `Mask Layer` . The chat background can be changed freely so that UI will look perfect.
 - Custom expression keyboard, custom tool keyboard.
 - Audio `wav` files can be automatically converted into `amr` files which facilite file transfer to Android devices. Both of the two type files have been doing cache.
-- When you tap the `TSChatVoiceCell`. It will automatically check the cache and download it by [Alamofire](https://github.com/Alamofire/Alamofire). 
+- When you tap the `WuChatVoiceCell`. It will automatically check the cache and download it by [Alamofire](https://github.com/Alamofire/Alamofire). 
 - When you send the image, it will be stored locally by using the caching mechanism of [Kingfisher](https://github.com/onevcat/Kingfisher). After successfully uploaded, it will be automatically modified to image link's `MD5` value file name.
-- The data are loaded from the JSON file. All the `Models` are created via [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper) which is easy to convert model objects (classes and structs) from JSON.
+- The data are loaded from the JSON file. All the `Models` are created via [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper) which is easy to convert model objecWu (classes and structs) from JSON.
 
 
 
 ## Preview
-Run `pod install` in the `Terminal` and then run `TSWeChat.xcworkspace` to see all the views.<br><br>
+Run `pod install` in the `Terminal` and then run `WuWeChat.xcworkspace` to see all the views.<br><br>
 ![](images/preview1.gif)
 
 ![](images/preview2.gif)
@@ -50,10 +47,9 @@ Sketch| To deposit the original Sketch files. All the recourses in the project a
 
 
 ## Vendor
-[See more details](https://github.com/hilen/TSWeChat/blob/master/Podfile)
+[See more details](https://github.com/charleo86/WuChat/master/Podfile)
 
-## License
-TSWeChat is released under the MIT license. See [LICENSE](https://github.com/hilen/TSWeChat/blob/master/LICENSE) for details.
+
 
 ## To Do
 - The custom photo album
@@ -61,20 +57,17 @@ TSWeChat is released under the MIT license. See [LICENSE](https://github.com/hil
 - Long press the chat cell
 - The image viewer
 - Address book
-- GIF image cell in TSChatViewController
+- GIF image cell 
 - QRCodeViewController
 - ShakeViewController
 - Send my address
-- Video cell in TSChatViewController
+- Video cell 
 - TimelineViewController
 - Multilanguage support
-- And so on...
 
-##Contributing
-- All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting & todo task) are welcome. Let's make it better. XD
+##Acknowledgement
+-Special to [hilen](https://github.com/hilen/), fork from his project [TSWeChat](https://github.com/hilen/TSWeChat/)
 
-##Contact
-Follow and contact me on [Twitter](http://twitter.com/hilenlai) or [Sina Weibo](http://weibo.com/laihailong).
 
 
 
