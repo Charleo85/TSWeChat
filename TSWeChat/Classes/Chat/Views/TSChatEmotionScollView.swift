@@ -193,7 +193,7 @@ extension TSChatEmotionScollView {
     /**
      touch 响应链 touchesCancelled
      */
-    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
+    override func touchesCancelled(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.hideMagnifierView()
         self.endBackspaceTimer()
     }

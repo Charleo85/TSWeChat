@@ -51,19 +51,19 @@ public extension UIImage {
         let transform = CGAffineTransformIdentity
         
         // Rotate and/or flip the image if required by its orientation
-        CGContextConcatCTM(context, transform);
+        CGContextConcatCTM(context!, transform);
         
         // Set the quality level to use when rescaling
-        CGContextSetInterpolationQuality(context, quality)
+        CGContextSetInterpolationQuality(context!, quality)
         
         
         //CGContextSetInterpolationQuality(context, CGInterpolationQuality(kCGInterpolationHigh.value))
         
         // Draw into the context; this scales the image
-        CGContextDrawImage(context, rect, self.CGImage)
+        CGContextDrawImage(context!, rect, self.CGImage!)
         
         // Get the resized image from the context and a UIImage
-        let newImage = UIImage(CGImage: CGBitmapContextCreateImage(context)!, scale: self.scale, orientation: self.imageOrientation)
+        let newImage = UIImage(CGImage: CGBitmapContextCreateImage(context!)!, scale: self.scale, orientation: self.imageOrientation)
         return newImage;
     }
     
@@ -79,7 +79,7 @@ public extension UIImage {
         } else {
             view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
         }
-        capture = UIGraphicsGetImageFromCurrentImageContext()
+        capture = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         return capture
     }
@@ -88,12 +88,12 @@ public extension UIImage {
         let rect = CGRectMake(0, 0, 1.0, 1.0)
         UIGraphicsBeginImageContext(rect.size)
         let context = UIGraphicsGetCurrentContext()
-        CGContextSetFillColorWithColor(context, color.CGColor)
-        CGContextFillRect(context, rect)
+        CGContextSetFillColorWithColor(context!, color.CGColor)
+        CGContextFillRect(context!, rect)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        return image
+        return image!
     }
     
     func roundWithCornerRadius(cornerRadius: CGFloat) -> UIImage {
@@ -101,11 +101,11 @@ public extension UIImage {
         UIGraphicsBeginImageContextWithOptions(self.size, false, 1)
         UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius).addClip()
         drawInRect(rect)
-        return UIGraphicsGetImageFromCurrentImageContext()
+        return UIGraphicsGetImageFromCurrentImageContext()!
     }
     
     func hasAlpha() -> Bool {
-        let alpha: CGImageAlphaInfo = CGImageGetAlphaInfo(self.CGImage)
+        let alpha: CGImageAlphaInfo = CGImageGetAlphaInfo(self.CGImage!)
         return (alpha == .First || alpha == .Last || alpha == .PremultipliedFirst || alpha == .PremultipliedLast)
     }
 }

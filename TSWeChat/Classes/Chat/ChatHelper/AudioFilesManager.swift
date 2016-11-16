@@ -22,7 +22,7 @@ class AudioFilesManager {
      */
     class func amrPathWithName(fileName: String) -> NSURL {
         let filePath = self.amrFilesFolder.URLByAppendingPathComponent("\(fileName).\(kAudioFileTypeAmr)")
-        return filePath
+        return filePath!
     }
     
     
@@ -35,7 +35,7 @@ class AudioFilesManager {
      */
     class func wavPathWithName(fileName: String) -> NSURL {
         let filePath = self.wavFilesFolder.URLByAppendingPathComponent("\(fileName).\(kAudioFileTypeWav)")
-        return filePath
+        return filePath!
     }
     
     
@@ -64,15 +64,15 @@ class AudioFilesManager {
         let documentsDirectory = NSFileManager.defaultManager().URLsForDirectory(.CachesDirectory, inDomains: .UserDomainMask)[0]
         let folder = documentsDirectory.URLByAppendingPathComponent(folderName)
         let fileManager = NSFileManager.defaultManager()
-        if !fileManager.fileExistsAtPath(folder.absoluteString) {
+        if !fileManager.fileExistsAtPath(folder!.absoluteString!) {
             do {
-                try fileManager.createDirectoryAtPath(folder.path!, withIntermediateDirectories: true, attributes: nil)
-                return folder
+                try fileManager.createDirectoryAtPath(folder!.path!, withIntermediateDirectories: true, attributes: nil)
+                return folder!
             } catch let error as NSError {
                 log.error("error:\(error)")
             }
         }
-        return folder
+        return folder!
     }
     
     /**

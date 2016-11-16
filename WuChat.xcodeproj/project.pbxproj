@@ -63,7 +63,6 @@
 		AE8F49B81C46A905009C1541 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F49A91C46A905009C1541 /* UIView+Extension.swift */; };
 		AE8F49B91C46A905009C1541 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F49AA1C46A905009C1541 /* UIView+Frame.swift */; };
 		AE8F49BA1C46A905009C1541 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F49AB1C46A905009C1541 /* UIViewController+Extension.swift */; };
-		AE8F49C01C46AA5F009C1541 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F49BF1C46AA5F009C1541 /* Notes.swift */; };
 		AE92B5E51C3FF73000968A3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B5E41C3FF73000968A3A /* AppDelegate.swift */; };
 		AE92B5FA1C3FF73000968A3A /* TSWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B5F91C3FF73000968A3A /* TSWeChatTests.swift */; };
 		AE92B7881C3FF7C900968A3A /* TSAppMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B6BA1C3FF7C900968A3A /* TSAppMacro.swift */; };
@@ -148,7 +147,7 @@
 		AEE69C181C81B92700C69224 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE69C171C81B92700C69224 /* UILabel+Extension.swift */; };
 		AEE69C1B1C81B97F00C69224 /* TSWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE69C1A1C81B97F00C69224 /* TSWebViewController.swift */; };
 		AEE69C1F1C81BF1F00C69224 /* TSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE69C1E1C81BF1F00C69224 /* TSConfig.swift */; };
-		FCE24244C651716D8F0A6FC9 /* Pods_TSWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF369A236F8AC360D6A6C2B /* Pods_TSWeChat.framework */; };
+		F441EF2A1EFAA9C251BC01B7 /* Pods_WuChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3772118269FAD3FE8A3AEDA8 /* Pods_WuChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,7 +162,10 @@
 
 /* Begin PBXFileReference section */
 		07EB8BB3A1FB7251C4DCBB7A /* Pods-TSWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSWeChat/Pods-TSWeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		3772118269FAD3FE8A3AEDA8 /* Pods_WuChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WuChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0919DEA8C1D9DC476F04AA /* Pods-TSWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSWeChat/Pods-TSWeChat.release.xcconfig"; sourceTree = "<group>"; };
+		96CB9ADCB8A3ECAD6E8006D9 /* Pods-WuChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-WuChat/Pods-WuChat.release.xcconfig"; sourceTree = "<group>"; };
+		A4B06A6C71152190332C7F95 /* Pods-WuChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WuChat/Pods-WuChat.debug.xcconfig"; sourceTree = "<group>"; };
 		AE040A9E1C990B4A003A764D /* TSLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSLocationManager.swift; sourceTree = "<group>"; };
 		AE3CBC541C854B90008BA4AC /* TSChatDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatDataManager.swift; sourceTree = "<group>"; };
 		AE3CBC591C858C3F008BA4AC /* TSChatViewController+TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSChatViewController+TestData.swift"; sourceTree = "<group>"; };
@@ -222,10 +224,9 @@
 		AE8F49AA1C46A905009C1541 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		AE8F49AB1C46A905009C1541 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		AE8F49BE1C46A95E009C1541 /* TSWeChat-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TSWeChat-Bridging-Header.h"; sourceTree = "<group>"; };
-		AE8F49BF1C46AA5F009C1541 /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
-		AE92B5E11C3FF73000968A3A /* TSWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE92B5E11C3FF73000968A3A /* WuChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WuChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE92B5E41C3FF73000968A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE92B5F51C3FF73000968A3A /* TSWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE92B5F51C3FF73000968A3A /* WuChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WuChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE92B5F91C3FF73000968A3A /* TSWeChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSWeChatTests.swift; sourceTree = "<group>"; };
 		AE92B5FB1C3FF73000968A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE92B6BA1C3FF7C900968A3A /* TSAppMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSAppMacro.swift; sourceTree = "<group>"; };
@@ -319,7 +320,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCE24244C651716D8F0A6FC9 /* Pods_TSWeChat.framework in Frameworks */,
+				F441EF2A1EFAA9C251BC01B7 /* Pods_WuChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				BFF369A236F8AC360D6A6C2B /* Pods_TSWeChat.framework */,
+				3772118269FAD3FE8A3AEDA8 /* Pods_WuChat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -346,6 +348,8 @@
 			children = (
 				07EB8BB3A1FB7251C4DCBB7A /* Pods-TSWeChat.debug.xcconfig */,
 				7B0919DEA8C1D9DC476F04AA /* Pods-TSWeChat.release.xcconfig */,
+				A4B06A6C71152190332C7F95 /* Pods-WuChat.debug.xcconfig */,
+				96CB9ADCB8A3ECAD6E8006D9 /* Pods-WuChat.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -454,8 +458,8 @@
 		AE92B5E21C3FF73000968A3A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE92B5E11C3FF73000968A3A /* TSWeChat.app */,
-				AE92B5F51C3FF73000968A3A /* TSWeChatTests.xctest */,
+				AE92B5E11C3FF73000968A3A /* WuChat.app */,
+				AE92B5F51C3FF73000968A3A /* WuChatTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -539,7 +543,6 @@
 			children = (
 				AE8F49BE1C46A95E009C1541 /* TSWeChat-Bridging-Header.h */,
 				AE92B7B21C3FFA5200968A3A /* Info.plist */,
-				AE8F49BF1C46AA5F009C1541 /* Notes.swift */,
 			);
 			path = "Supportting Files";
 			sourceTree = "<group>";
@@ -725,9 +728,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AE92B5E01C3FF73000968A3A /* TSWeChat */ = {
+		AE92B5E01C3FF73000968A3A /* WuChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE92B5FE1C3FF73000968A3A /* Build configuration list for PBXNativeTarget "TSWeChat" */;
+			buildConfigurationList = AE92B5FE1C3FF73000968A3A /* Build configuration list for PBXNativeTarget "WuChat" */;
 			buildPhases = (
 				D85F33FB36C554A757684B9D /* [CP] Check Pods Manifest.lock */,
 				AE92B5DD1C3FF73000968A3A /* Sources */,
@@ -740,14 +743,14 @@
 			);
 			dependencies = (
 			);
-			name = TSWeChat;
+			name = WuChat;
 			productName = TSWeChat;
-			productReference = AE92B5E11C3FF73000968A3A /* TSWeChat.app */;
+			productReference = AE92B5E11C3FF73000968A3A /* WuChat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AE92B5F41C3FF73000968A3A /* TSWeChatTests */ = {
+		AE92B5F41C3FF73000968A3A /* WuChatTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE92B6011C3FF73000968A3A /* Build configuration list for PBXNativeTarget "TSWeChatTests" */;
+			buildConfigurationList = AE92B6011C3FF73000968A3A /* Build configuration list for PBXNativeTarget "WuChatTests" */;
 			buildPhases = (
 				AE92B5F11C3FF73000968A3A /* Sources */,
 				AE92B5F21C3FF73000968A3A /* Frameworks */,
@@ -758,9 +761,9 @@
 			dependencies = (
 				AE92B5F71C3FF73000968A3A /* PBXTargetDependency */,
 			);
-			name = TSWeChatTests;
+			name = WuChatTests;
 			productName = TSWeChatTests;
-			productReference = AE92B5F51C3FF73000968A3A /* TSWeChatTests.xctest */;
+			productReference = AE92B5F51C3FF73000968A3A /* WuChatTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -769,21 +772,23 @@
 		AE92B5D91C3FF73000968A3A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = TS;
+				CLASSPREFIX = Wu;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = Hilen;
+				ORGANIZATIONNAME = Charleo;
 				TargetAttributes = {
 					AE92B5E01C3FF73000968A3A = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 					};
 					AE92B5F41C3FF73000968A3A = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 						TestTargetID = AE92B5E01C3FF73000968A3A;
 					};
 				};
 			};
-			buildConfigurationList = AE92B5DC1C3FF73000968A3A /* Build configuration list for PBXProject "TSWeChat" */;
+			buildConfigurationList = AE92B5DC1C3FF73000968A3A /* Build configuration list for PBXProject "WuChat" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -796,8 +801,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AE92B5E01C3FF73000968A3A /* TSWeChat */,
-				AE92B5F41C3FF73000968A3A /* TSWeChatTests */,
+				AE92B5E01C3FF73000968A3A /* WuChat */,
+				AE92B5F41C3FF73000968A3A /* WuChatTests */,
 			);
 		};
 /* End PBXProject section */
@@ -874,7 +879,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSWeChat/Pods-TSWeChat-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WuChat/Pods-WuChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6C607EDD44D6B44BD2AB97A4 /* [CP] Copy Pods Resources */ = {
@@ -889,7 +894,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSWeChat/Pods-TSWeChat-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WuChat/Pods-WuChat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D85F33FB36C554A757684B9D /* [CP] Check Pods Manifest.lock */ = {
@@ -930,7 +935,6 @@
 				AEE69BAE1C81B58600C69224 /* AudioFilesManager.swift in Sources */,
 				AE92B8CB1C3FFD0D00968A3A /* TSContactsViewController.swift in Sources */,
 				AEE69BA01C81B58600C69224 /* TSChatBaseCell.swift in Sources */,
-				AE8F49C01C46AA5F009C1541 /* Notes.swift in Sources */,
 				AE87428C1C7B250D003A435C /* TSContactModel.swift in Sources */,
 				AE69C7761C8E74A900D929CD /* TSMessageActionFloatView.swift in Sources */,
 				AE8F49B61C46A905009C1541 /* UISearchBar+Extension.swift in Sources */,
@@ -1028,7 +1032,7 @@
 /* Begin PBXTargetDependency section */
 		AE92B5F71C3FF73000968A3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AE92B5E01C3FF73000968A3A /* TSWeChat */;
+			target = AE92B5E01C3FF73000968A3A /* WuChat */;
 			targetProxy = AE92B5F61C3FF73000968A3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1117,7 +1121,7 @@
 		};
 		AE92B5FF1C3FF73000968A3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07EB8BB3A1FB7251C4DCBB7A /* Pods-TSWeChat.debug.xcconfig */;
+			baseConfigurationReference = A4B06A6C71152190332C7F95 /* Pods-WuChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1126,19 +1130,17 @@
 				INFOPLIST_FILE = "$(SRCROOT)/TSWeChat/Supportting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TSWeChat/Vendor/VoiceConvert/lib",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Hilen.TSWeChat;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = charleo.WuChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/TSWeChat/Supportting Files//TSWeChat-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		AE92B6001C3FF73000968A3A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B0919DEA8C1D9DC476F04AA /* Pods-TSWeChat.release.xcconfig */;
+			baseConfigurationReference = 96CB9ADCB8A3ECAD6E8006D9 /* Pods-WuChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1147,13 +1149,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/TSWeChat/Supportting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TSWeChat/Vendor/VoiceConvert/lib",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Hilen.TSWeChat;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = charleo.WuChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/TSWeChat/Supportting Files//TSWeChat-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -1165,7 +1165,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hilen.TSWeChatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TSWeChat.app/TSWeChat";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WuChat.app/WuChat";
 			};
 			name = Debug;
 		};
@@ -1177,14 +1178,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hilen.TSWeChatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TSWeChat.app/TSWeChat";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WuChat.app/WuChat";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AE92B5DC1C3FF73000968A3A /* Build configuration list for PBXProject "TSWeChat" */ = {
+		AE92B5DC1C3FF73000968A3A /* Build configuration list for PBXProject "WuChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE92B5FC1C3FF73000968A3A /* Debug */,
@@ -1193,7 +1195,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE92B5FE1C3FF73000968A3A /* Build configuration list for PBXNativeTarget "TSWeChat" */ = {
+		AE92B5FE1C3FF73000968A3A /* Build configuration list for PBXNativeTarget "WuChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE92B5FF1C3FF73000968A3A /* Debug */,
@@ -1202,7 +1204,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE92B6011C3FF73000968A3A /* Build configuration list for PBXNativeTarget "TSWeChatTests" */ = {
+		AE92B6011C3FF73000968A3A /* Build configuration list for PBXNativeTarget "WuChatTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE92B6021C3FF73000968A3A /* Debug */,

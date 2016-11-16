@@ -174,11 +174,11 @@ class TSChatImageCell: TSChatBaseCell {
             CGImageGetBitsPerComponent(maskRef),
             CGImageGetBitsPerPixel(maskRef),
             CGImageGetBytesPerRow(maskRef),
-            CGImageGetDataProvider(maskRef),
+            CGImageGetDataProvider(maskRef)!,
             nil,
             false
         )!
-        let maskedImageRef: CGImageRef = CGImageCreateWithMask(image.CGImage, mask)!
+        let maskedImageRef: CGImageRef = CGImageCreateWithMask(image.CGImage!, mask)!
         let maskedImage: UIImage = UIImage(CGImage:maskedImageRef)
         // returns new image with mask applied
         return maskedImage

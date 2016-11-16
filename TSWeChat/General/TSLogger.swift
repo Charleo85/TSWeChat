@@ -37,7 +37,7 @@ let log: XCGLogger = {
         log.addLogDestination(XCGNSLogDestination(owner: log, identifier: XCGLogger.constants.nslogDestinationIdentifier))
         log.logAppDetails()
     #else
-        let logPath: NSURL = cacheDirectory.URLByAppendingPathComponent("ts_wechat_Log.txt")
+        let logPath: NSURL = cacheDirectory.URLByAppendingPathComponent("ts_wechat_Log.txt")!
         log.setup(.Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: logPath)
     #endif
     
