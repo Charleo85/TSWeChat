@@ -3,7 +3,7 @@
 <a href="https://github.com/hilen/TSWeChat/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat"></a>
 <a href="http://twitter.com/wjb665"><img src="https://img.shields.io/badge/twitter-@wjb665-blue.svg?style=flat"></a>
 
-WuChat - An alternative [WeChat](https://itunes.apple.com/cn/app/wei/id414478124) mobile client. Written in Swift 3Wu. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[中文说明](Chinese_README.md)
+WuChat - An alternative [WeChat](https://itunes.apple.com/cn/app/wei/id414478124) mobile client. Written in Swift 2.3. 
 
 ## Requirements
 - [Cocoapods](https://github.com/CocoaPods/CocoaPods) 1.0.0 +
@@ -13,10 +13,10 @@ WuChat - An alternative [WeChat](https://itunes.apple.com/cn/app/wei/id414478124
 
 ## Features
 - Send your rich text, expression, image and voice.
-- The cell image in `WuChatImageCell` is drawn by using `Mask Layer` . The chat background can be changed freely so that UI will look perfect.
+- The cell image in `TSChatImageCell` is drawn by using `Mask Layer` . The chat background can be changed freely so that UI will look perfect.
 - Custom expression keyboard, custom tool keyboard.
 - Audio `wav` files can be automatically converted into `amr` files which facilite file transfer to Android devices. Both of the two type files have been doing cache.
-- When you tap the `WuChatVoiceCell`. It will automatically check the cache and download it by [Alamofire](https://github.com/Alamofire/Alamofire). 
+- When you tap the `TSChatVoiceCell`. It will automatically check the cache and download it by [Alamofire](https://github.com/Alamofire/Alamofire). 
 - When you send the image, it will be stored locally by using the caching mechanism of [Kingfisher](https://github.com/onevcat/Kingfisher). After successfully uploaded, it will be automatically modified to image link's `MD5` value file name.
 - The data are loaded from the JSON file. All the `Models` are created via [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper) which is easy to convert model objecWu (classes and structs) from JSON.
 
@@ -25,10 +25,6 @@ WuChat - An alternative [WeChat](https://itunes.apple.com/cn/app/wei/id414478124
 ## Preview
 Run `pod install` in the `Terminal` and then run `WuWeChat.xcworkspace` to see all the views.<br><br>
 ![](images/preview1.gif)
-
-![](images/preview2.gif)
-
-![](images/preview3.gif)
 
 ## Directory
 
@@ -46,11 +42,6 @@ Scripts| APNs script, export IPA file script and etc.
 Sketch| To deposit the original Sketch files. All the recourses in the project are come from the WeChat IPA folder, but some images I can't find. So I decided to do it myself. Yeah, I love design, sometimes coder become a designer is feeling good. XD
 
 
-## Vendor
-[See more details](https://github.com/charleo86/WuChat/master/Podfile)
-
-
-
 ## To Do
 - The custom photo album
 - WeChat custom ActionSheet
@@ -66,8 +57,9 @@ Sketch| To deposit the original Sketch files. All the recourses in the project a
 - Multilanguage support
 
 ##Acknowledgement
--Special to [hilen](https://github.com/hilen/), fork from his project [TSWeChat](https://github.com/hilen/TSWeChat/)
-
+- Special to [hilen](https://github.com/hilen/), forked from [TSWeChat](https://github.com/hilen/TSWeChat/)
+- Vendors
+[Podfile](https://github.com/Charleo85/WuChat/blob/master/Podfile)
 
 
 

@@ -22,6 +22,7 @@ def pods
     pod 'SnapKit', '~> 0.22.0'
     pod 'BSImagePicker', '2.4.0'
     pod 'TSVoiceConverter', '0.1.2'
+    pod 'SWXMLHash', '~> 2.5.1'
 
     #Objective-C
     pod 'YYText'

@@ -19,6 +19,7 @@ PODS:
   - SnapKit (0.22.0)
   - SVProgressHUD (2.0)
   - SwiftyJSON (2.4.0)
+  - SWXMLHash (2.5.1)
   - TSVoiceConverter (0.1.2)
   - UIColor_Hex_Swift (2.1)
   - UIImageViewModeScaleAspect (1.5)
@@ -40,6 +41,7 @@ DEPENDENCIES:
   - SnapKit (~> 0.22.0)
   - SVProgressHUD
   - SwiftyJSON (~> 2.4.0)
+  - SWXMLHash (~> 2.5.1)
   - TSVoiceConverter (= 0.1.2)
   - UIColor_Hex_Swift (~> 2.0)
   - XCGLogger (~> 3.6.0)
@@ -61,12 +63,13 @@ SPEC CHECKSUMS:
   SnapKit: 0dd2fd157330f1ea11fd84da13e6be8a7a22bae0
   SVProgressHUD: e9e7c893686a20da55a28015ed384d9425e15479
   SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
+  SWXMLHash: 89929225cad9c70ff96dcce54a19ddb2b1a18a69
   TSVoiceConverter: a671f27d61e0f7bf442a8146fab1358343ce32fd
   UIColor_Hex_Swift: e91dc51f6bf252ec7bf74c8704ceedeeb7640c1c
   UIImageViewModeScaleAspect: 11a790a0b9d248a13dc63e3a78991f1463b6d84e
   XCGLogger: 53a3efe22e228e8b25ed8184bc074c2b06d48490
   YYText: 3050159192035d7f232b537ce76668aac2e2bd8b
 
-PODFILE CHECKSUM: dcea4dfe10957b3244e86866de3d602e9c052600
+PODFILE CHECKSUM: 376edb452c9cfea1925b042e18dcfc146e43e863
 
 COCOAPODS: 1.0.1
