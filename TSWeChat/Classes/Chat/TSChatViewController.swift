@@ -19,7 +19,7 @@ import SwiftyJSON
 private let kChatLoadMoreOffset: CGFloat = 30
 
 final class TSChatViewController: UIViewController {
-    var messageModel: MessageModel?
+    var messageModel: Contact?
     @IBOutlet var refreshView: UIView!
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     
@@ -49,7 +49,7 @@ final class TSChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = self.messageModel!.nickname!
+        self.title = self.messageModel!.displayName!
         self.view.backgroundColor = UIColor(colorNamed: TSColor.viewBackgroundColor)
         self.navigationController!.interactivePopGestureRecognizer!.enabled = true
 

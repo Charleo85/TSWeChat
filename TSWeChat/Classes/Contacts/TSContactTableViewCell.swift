@@ -12,13 +12,23 @@ class TSContactTableViewCell: UITableViewCell {
 
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
+    
+//    var contentObject: AnyObject?
 
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
-    func setCellContnet(model: ContactModel) {
-        self.avatarImageView.ts_setImageWithURLString(model.avatarSmallURL, placeholderImage: TSAsset.Icon_avatar.image)
+    func setCellContent(withContact contact: Contact) {
+//        contentObject = contact
+        let url = "https://wx.qq.com\(contact.headImgUrl!)"
+        self.avatarImageView.ts_setImageWithURLString(url, placeholderImage: TSAsset.Icon_avatar.image)
+        self.usernameLabel.text = contact.displayName
+    }
+    
+    func setCellContent(withModel model: ContactModel) {
+//        contentObject = model
+        self.avatarImageView.ts_setImageWithURLString(model.avatarSmallURL , placeholderImage: TSAsset.Icon_avatar.image)
         self.usernameLabel.text = model.chineseName
     }
     

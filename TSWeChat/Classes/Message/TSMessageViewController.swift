@@ -9,10 +9,14 @@
 import UIKit
 import SwiftyJSON
 import SnapKit
+import CoreData
 
 class TSMessageViewController: UIViewController {
     @IBOutlet private weak var listTableView: UITableView!
-    private var itemDataSouce = [MessageModel]()
+//    private var itemDataSouce = [MessageModel]()
+    private var itemDataSouce = [Contact]()
+    var managedObjectContext: NSManagedObjectContext? =
+        (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
     var actionFloatView: TSMessageActionFloatView!
     
     override func viewDidLoad() {
@@ -45,18 +49,32 @@ class TSMessageViewController: UIViewController {
     }
     
     private func fetchData() {
-        guard let JSONData = NSData.dataFromJSONFile("message") else { return }
-        let jsonObject = JSON(data: JSONData)
-        if jsonObject != JSON.null {
-            var list = [MessageModel]()
-            for dict in jsonObject["data"].arrayObject! {
-                guard let model = TSMapper<MessageModel>().map(dict) else { continue }
-                list.insert(model, atIndex: list.count)
+//        guard let JSONData = NSData.dataFromJSONFile("message") else { return }
+//        let jsonObject = JSON(data: JSONData)
+//        if jsonObject != JSON.null {
+//            var list = [MessageModel]()
+//            for dict in jsonObject["data"].arrayObject! {
+//                guard let model = TSMapper<MessageModel>().map(dict) else { continue }
+//                list.insert(model, atIndex: list.count)
+//            }
+//            //Insert more data, make the UITableView long and long.  XD
+//            self.itemDataSouce.insertContentsOf(list, at: 0)
+//            self.itemDataSouce.insertContentsOf(list, at: 0)
+//            self.itemDataSouce.insertContentsOf(list, at: 0)
+//            self.itemDataSouce.insertContentsOf(list, at: 0)
+//            self.listTableView.reloadData()
+//        }
+        var list = [Contact]()
+        
+        let contactsFetch = NSFetchRequest(entityName: "Contact")
+        if let chatset = UserInstance.chatSet {
+            for chat in chatset {
+                let predicate = NSPredicate(format: "userName == %@", chat)
+                contactsFetch.predicate = predicate
+                if let contact = try? managedObjectContext!.executeFetchRequest(contactsFetch) as! [Contact]{
+                    list += contact
+                }
             }
-            //Insert more data, make the UITableView long and long.  XD
-            self.itemDataSouce.insertContentsOf(list, at: 0)
-            self.itemDataSouce.insertContentsOf(list, at: 0)
-            self.itemDataSouce.insertContentsOf(list, at: 0)
             self.itemDataSouce.insertContentsOf(list, at: 0)
             self.listTableView.reloadData()
         }
@@ -98,7 +116,7 @@ extension TSMessageViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(TSMessageTableViewCell.identifier, forIndexPath: indexPath) as! TSMessageTableViewCell
-        cell.setCellContnet(self.itemDataSouce[indexPath.row])
+        cell.setCellContent(self.itemDataSouce[indexPath.row])
         return cell
     }
 }

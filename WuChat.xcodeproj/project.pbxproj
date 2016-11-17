@@ -45,7 +45,6 @@
 		AE87427F1C7AF602003A435C /* TSModelTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87427E1C7AF602003A435C /* TSModelTransformer.swift */; };
 		AE8742871C7B079B003A435C /* TSMeAvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8742851C7B079B003A435C /* TSMeAvatarTableViewCell.swift */; };
 		AE8742881C7B079B003A435C /* TSMeAvatarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8742861C7B079B003A435C /* TSMeAvatarTableViewCell.xib */; };
-		AE87428A1C7B0D7D003A435C /* Kenny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE8742891C7B0D7D003A435C /* Kenny.jpg */; };
 		AE87428C1C7B250D003A435C /* TSContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87428B1C7B250D003A435C /* TSContactModel.swift */; };
 		AE8742911C7B3547003A435C /* TSContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87428F1C7B3547003A435C /* TSContactTableViewCell.swift */; };
 		AE8742921C7B3547003A435C /* TSContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8742901C7B3547003A435C /* TSContactTableViewCell.xib */; };
@@ -147,6 +146,12 @@
 		AEE69C181C81B92700C69224 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE69C171C81B92700C69224 /* UILabel+Extension.swift */; };
 		AEE69C1B1C81B97F00C69224 /* TSWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE69C1A1C81B97F00C69224 /* TSWebViewController.swift */; };
 		AEE69C1F1C81BF1F00C69224 /* TSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE69C1E1C81BF1F00C69224 /* TSConfig.swift */; };
+		CB5637D41DDD041600F9E2AA /* TSLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5637D11DDD041600F9E2AA /* TSLoginManager.swift */; };
+		CB5637D51DDD041600F9E2AA /* TSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5637D21DDD041600F9E2AA /* TSLoginViewController.swift */; };
+		CB5637D61DDD041600F9E2AA /* TSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5637D31DDD041600F9E2AA /* TSLoginViewController.xib */; };
+		CB5637DC1DDD066500F9E2AA /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5637D81DDD066500F9E2AA /* Contact.swift */; };
+		CB5637DD1DDD066500F9E2AA /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5637D91DDD066500F9E2AA /* Contact+CoreDataProperties.swift */; };
+		CB5637DE1DDD066500F9E2AA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB5637DA1DDD066500F9E2AA /* Model.xcdatamodeld */; };
 		F441EF2A1EFAA9C251BC01B7 /* Pods_WuChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3772118269FAD3FE8A3AEDA8 /* Pods_WuChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -203,7 +208,6 @@
 		AE87427E1C7AF602003A435C /* TSModelTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSModelTransformer.swift; sourceTree = "<group>"; };
 		AE8742851C7B079B003A435C /* TSMeAvatarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSMeAvatarTableViewCell.swift; sourceTree = "<group>"; };
 		AE8742861C7B079B003A435C /* TSMeAvatarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMeAvatarTableViewCell.xib; sourceTree = "<group>"; };
-		AE8742891C7B0D7D003A435C /* Kenny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kenny.jpg; sourceTree = "<group>"; };
 		AE87428B1C7B250D003A435C /* TSContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSContactModel.swift; sourceTree = "<group>"; };
 		AE87428F1C7B3547003A435C /* TSContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSContactTableViewCell.swift; sourceTree = "<group>"; };
 		AE8742901C7B3547003A435C /* TSContactTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSContactTableViewCell.xib; sourceTree = "<group>"; };
@@ -223,7 +227,7 @@
 		AE8F49AB1C46A905009C1541 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		AE8F49BE1C46A95E009C1541 /* TSWeChat-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TSWeChat-Bridging-Header.h"; path = "../Support Files/TSWeChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE92B5E11C3FF73000968A3A /* WuChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WuChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE92B5E41C3FF73000968A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE92B5E41C3FF73000968A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
 		AE92B5F51C3FF73000968A3A /* WuChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WuChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE92B5F91C3FF73000968A3A /* TSWeChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSWeChatTests.swift; sourceTree = "<group>"; };
 		AE92B5FB1C3FF73000968A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -310,6 +314,12 @@
 		AEE69C171C81B92700C69224 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		AEE69C1A1C81B97F00C69224 /* TSWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSWebViewController.swift; sourceTree = "<group>"; };
 		AEE69C1E1C81BF1F00C69224 /* TSConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSConfig.swift; sourceTree = "<group>"; };
+		CB5637D11DDD041600F9E2AA /* TSLoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSLoginManager.swift; path = ../../Macro/TSLoginManager.swift; sourceTree = "<group>"; };
+		CB5637D21DDD041600F9E2AA /* TSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSLoginViewController.swift; path = ../../Macro/TSLoginViewController.swift; sourceTree = "<group>"; };
+		CB5637D31DDD041600F9E2AA /* TSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TSLoginViewController.xib; path = ../../Macro/TSLoginViewController.xib; sourceTree = "<group>"; };
+		CB5637D81DDD066500F9E2AA /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		CB5637D91DDD066500F9E2AA /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CB5637DB1DDD066500F9E2AA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,9 +399,10 @@
 			children = (
 				AEBEE5981C86F13000956B0C /* Http */,
 				AE87426F1C7AE23E003A435C /* Models */,
-				AE8742721C7AE23E003A435C /* TSApplicationManager.swift */,
-				AE8742731C7AE23E003A435C /* TSUserManager.swift */,
+				AE92B5E41C3FF73000968A3A /* AppDelegate.swift */,
 				AE040A9E1C990B4A003A764D /* TSLocationManager.swift */,
+				AE8742721C7AE23E003A435C /* TSApplicationManager.swift */,
+				CB5637D71DDD041E00F9E2AA /* Login */,
 			);
 			path = CoreModule;
 			sourceTree = "<group>";
@@ -406,6 +417,9 @@
 				AE87427E1C7AF602003A435C /* TSModelTransformer.swift */,
 				AE87428B1C7B250D003A435C /* TSContactModel.swift */,
 				AEBEE59F1C8706B800956B0C /* TSUploadModel.swift */,
+				CB5637D81DDD066500F9E2AA /* Contact.swift */,
+				CB5637D91DDD066500F9E2AA /* Contact+CoreDataProperties.swift */,
+				CB5637DA1DDD066500F9E2AA /* Model.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -461,7 +475,6 @@
 		AE92B5E31C3FF73000968A3A /* TSWeChat */ = {
 			isa = PBXGroup;
 			children = (
-				AE92B5E41C3FF73000968A3A /* AppDelegate.swift */,
 				AE92B6041C3FF7C900968A3A /* Classes */,
 				AE92B6981C3FF7C900968A3A /* General */,
 				AE8F499C1C46A905009C1541 /* Helpers */,
@@ -602,7 +615,6 @@
 				AE69C7591C8DDEA600D929CD /* Audio */,
 				AEBEE5A41C87345700956B0C /* JSON */,
 				AEE69B241C7CB2AF00C69224 /* Expression.bundle */,
-				AE8742891C7B0D7D003A435C /* Kenny.jpg */,
 				AE92B8CE1C3FFFDB00968A3A /* Assets.xcassets */,
 				AE92B8D11C3FFFDB00968A3A /* Media.xcassets */,
 				AEE69A591C7CB07C00C69224 /* Expression.plist */,
@@ -720,6 +732,17 @@
 			path = Web;
 			sourceTree = "<group>";
 		};
+		CB5637D71DDD041E00F9E2AA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AE8742731C7AE23E003A435C /* TSUserManager.swift */,
+				CB5637D11DDD041600F9E2AA /* TSLoginManager.swift */,
+				CB5637D21DDD041600F9E2AA /* TSLoginViewController.swift */,
+				CB5637D31DDD041600F9E2AA /* TSLoginViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -774,6 +797,7 @@
 				TargetAttributes = {
 					AE92B5E01C3FF73000968A3A = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = UFEDQ34U83;
 						LastSwiftMigration = 0810;
 					};
 					AE92B5F41C3FF73000968A3A = {
@@ -815,6 +839,7 @@
 				AEBEE5A91C87345700956B0C /* contact.json in Resources */,
 				AEBEE5A81C87345700956B0C /* chat.json in Resources */,
 				AE8742881C7B079B003A435C /* TSMeAvatarTableViewCell.xib in Resources */,
+				CB5637D61DDD041600F9E2AA /* TSLoginViewController.xib in Resources */,
 				AE69C7651C8DDEA600D929CD /* shake_nomatch.wav in Resources */,
 				AE69C7611C8DDEA600D929CD /* call.caf in Resources */,
 				AE92B8C01C3FFC5D00968A3A /* TSMessageViewController.xib in Resources */,
@@ -838,7 +863,6 @@
 				AEE69BD11C81B58600C69224 /* TSChatShareMoreView.xib in Resources */,
 				AE69C7601C8DDEA600D929CD /* beep.wav in Resources */,
 				AEBEE5AA1C87345700956B0C /* message.json in Resources */,
-				AE87428A1C7B0D7D003A435C /* Kenny.jpg in Resources */,
 				AEE69BD41C81B58600C69224 /* TSChatVoiceIndicatorView.xib in Resources */,
 				AEE69BA51C81B58600C69224 /* TSChatSystemCell.xib in Resources */,
 				AE69C7671C8E6A2500D929CD /* close.wav in Resources */,
@@ -936,6 +960,7 @@
 				AE8F49B81C46A905009C1541 /* UIView+Extension.swift in Sources */,
 				AE69C77A1C8F355700D929CD /* TSNavigationBar.swift in Sources */,
 				AEE69BD01C81B58600C69224 /* TSChatShareMoreView.swift in Sources */,
+				CB5637D41DDD041600F9E2AA /* TSLoginManager.swift in Sources */,
 				AEE69BB21C81B58600C69224 /* ChatConfig.swift in Sources */,
 				AE8F49AC1C46A905009C1541 /* AboutApp.swift in Sources */,
 				AE3CBC5A1C858C3F008BA4AC /* TSChatViewController+TestData.swift in Sources */,
@@ -953,6 +978,7 @@
 				AEE69BC01C81B58600C69224 /* TSChatViewController+CellEnums.swift in Sources */,
 				AEBEE5AF1C8754BD00956B0C /* TSChatButton.swift in Sources */,
 				AE87425D1C7AE0F1003A435C /* TSUIImage+WeChat.swift in Sources */,
+				CB5637DD1DDD066500F9E2AA /* Contact+CoreDataProperties.swift in Sources */,
 				AE87425C1C7AE0F1003A435C /* TSUIImageVIew+WeChat.swift in Sources */,
 				AEE69BCB1C81B58600C69224 /* TSChatEmotionInputView.swift in Sources */,
 				AE87425F1C7AE0F1003A435C /* TSUIColor+WeChat.swift in Sources */,
@@ -965,14 +991,17 @@
 				AEE69BAA1C81B58600C69224 /* TSChatVoiceCell.swift in Sources */,
 				AEE69BA11C81B58600C69224 /* TSChatCellDelegate.swift in Sources */,
 				AEE69C1B1C81B97F00C69224 /* TSWebViewController.swift in Sources */,
+				CB5637DC1DDD066500F9E2AA /* Contact.swift in Sources */,
 				AE8742611C7AE0F1003A435C /* TSProgressHUD.swift in Sources */,
 				AEE69BB61C81B58600C69224 /* ImageFilesManager.swift in Sources */,
 				AEE69C141C81B68500C69224 /* TSLogger.swift in Sources */,
 				AE8F49AD1C46A905009C1541 /* CGRect+Extension.swift in Sources */,
 				AEE69BCE1C81B58600C69224 /* TSChatShareMoreCollectionViewCell.swift in Sources */,
+				CB5637DE1DDD066500F9E2AA /* Model.xcdatamodeld in Sources */,
 				AE8742741C7AE23E003A435C /* TSMessageModel.swift in Sources */,
 				AEE69BBB1C81B58600C69224 /* UITableView+ChatAdditions.swift in Sources */,
 				AEE69B631C81997500C69224 /* String+Crypto.swift in Sources */,
+				CB5637D51DDD041600F9E2AA /* TSLoginViewController.swift in Sources */,
 				AEE69BAF1C81B58600C69224 /* AudioPlayManager.swift in Sources */,
 				AEE69BC31C81B58600C69224 /* TSChatViewController+Keyboard.swift in Sources */,
 				AEBEE5971C86B90600956B0C /* TSGlobalHelper.swift in Sources */,
@@ -1121,9 +1150,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = UFEDQ34U83;
 				ENABLE_BITCODE = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				INFOPLIST_FILE = "$(SRCROOT)/TSWeChat/Support Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.charleo.WuChat;
@@ -1140,9 +1171,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = UFEDQ34U83;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/TSWeChat/Support Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.charleo.WuChat;
@@ -1209,6 +1241,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB5637DA1DDD066500F9E2AA /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB5637DB1DDD066500F9E2AA /* Model.xcdatamodel */,
+			);
+			currentVersion = CB5637DB1DDD066500F9E2AA /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AE92B5D91C3FF73000968A3A /* Project object */;
 }

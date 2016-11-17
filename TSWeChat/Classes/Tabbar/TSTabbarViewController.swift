@@ -13,6 +13,7 @@ class TSTabbarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupViewController()
+        selectedIndex = 3
     }
     
     func setupViewController() {

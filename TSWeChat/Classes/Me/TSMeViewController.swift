@@ -27,20 +27,20 @@ class TSMeViewController: UIViewController {
         [
             ("设置", TSAsset.MoreSetting.image),
         ],
-    ]
+        ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "我"
         self.view.backgroundColor = UIColor(colorNamed: TSColor.viewBackgroundColor)
-
+        
         self.listTableView.registerNib(TSMeAvatarTableViewCell.NibObject(), forCellReuseIdentifier: TSMeAvatarTableViewCell.identifier)
         self.listTableView.registerNib(TSImageTextTableViewCell.NibObject(), forCellReuseIdentifier: TSImageTextTableViewCell.identifier)
         self.listTableView.tableFooterView = UIView()
     }
-
+    
     deinit {
-        log.verbose("deinit")
+//                log.verbose("deinit")
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,17 +48,17 @@ class TSMeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
 

@@ -24,13 +24,17 @@ class TSMessageTableViewCell: UITableViewCell {
         self.unreadNumberLabel.layer.cornerRadius = self.unreadNumberLabel.height / 2.0
     }
 
-    func setCellContnet(model: MessageModel) {
-        self.avatarImageView.ts_setImageWithURLString(model.middleImageURL, placeholderImage: model.messageFromType.placeHolderImage)
-        self.unreadNumberLabel.text = model.unreadNumber > 99 ? "99+" : String(model.unreadNumber!)
-        self.unreadNumberLabel.hidden = (model.unreadNumber == 0)
-        self.lastMessageLabel.text = model.lastMessage!
-        self.dateLabel.text = model.dateString!
-        self.nameLabel.text = model.nickname!
+//    func setCellContnet(model: MessageModel) {
+//        self.avatarImageView.ts_setImageWithURLString(model.middleImageURL, placeholderImage: model.messageFromType.placeHolderImage)
+//        self.unreadNumberLabel.text = model.unreadNumber > 99 ? "99+" : String(model.unreadNumber!)
+//        self.unreadNumberLabel.hidden = (model.unreadNumber == 0)
+//        self.lastMessageLabel.text = model.lastMessage!
+//        self.dateLabel.text = model.dateString!
+//        self.nameLabel.text = model.nickname!
+//    }
+    func setCellContent(model: Contact) {
+        self.unreadNumberLabel.hidden = true
+        self.nameLabel.text = model.displayName
     }
     
     override func setSelected(selected: Bool, animated: Bool) {
